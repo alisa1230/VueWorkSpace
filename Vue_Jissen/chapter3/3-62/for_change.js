@@ -4,8 +4,17 @@ new Vue({
         list: ['赤パジャマ', '青パジャマ', '黄パジャマ']
     },
     methods: {
-        onclick: function () {
-            this.list.push('茶パジャマ')
+        onPush: function () {
+            this.list.push('ABCD')
+        },
+        onPop: function () {
+            this.list.pop('ABCD')
+        },
+        onShift: function () {
+            this.list.shift('ABCD')
+        },
+        onUnshift: function () {
+            this.list.unshift('ABCD')
         }
     }
 })

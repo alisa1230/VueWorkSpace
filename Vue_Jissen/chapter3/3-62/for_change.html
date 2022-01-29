@@ -10,8 +10,12 @@
 
 <body>
     <div id="app">
+        <h3>「ABCD」って文字が追加される</h3>
         <form>
-            <input type="button" value="変更" v-on:click="onclick" />
+            <input type="button" value="push末尾追加" v-on:click="onPush" />
+            <input type="button" value="unshift先頭追加" v-on:click="onUnshift" />
+            <input type="button" value="pop末尾削除" v-on:click="onPop" />
+            <input type="button" value="shift先頭削除" v-on:click="onShift" />
         </form>
         <ul>
             <li v-for="item in list"> {{ item }}
