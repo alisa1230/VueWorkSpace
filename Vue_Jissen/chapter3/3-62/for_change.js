@@ -21,6 +21,9 @@ new Vue({
         },
         onReverse: function () {
             this.list.reverse()
+        },
+        onSplice: function () {
+            this.list.splice(1,1,'ABCD')
         }
     }
 })

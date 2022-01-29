@@ -18,6 +18,7 @@
             <input type="button" value="shift先頭削除" v-on:click="onShift" />
             <input type="button" value="sort並替" v-on:click="onSort" />
             <input type="button" value="reverse反転" v-on:click="onReverse" />
+            <input type="button" value="splice2番目から1個の要素をABCDで置換" v-on:click="onSplice" />
         </form>
         <ul>
             <li v-for="item in list"> {{ item }}
