@@ -15,6 +15,12 @@ new Vue({
         },
         onUnshift: function () {
             this.list.unshift('ABCD')
+        },
+        onSort: function () {
+            this.list.sort()
+        },
+        onReverse: function () {
+            this.list.reverse()
         }
     }
 })

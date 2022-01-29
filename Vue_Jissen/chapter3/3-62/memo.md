@@ -11,3 +11,5 @@
   | sort()                                    | 要素を順番に並び替え                                 |
   | reverse()                                 | 要素の並び順を反転                                   |
 <br>
+
+[動作確認](https://codepen.io/alisa1230/pen/ZEabprr)

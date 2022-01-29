@@ -16,6 +16,8 @@
             <input type="button" value="unshift先頭追加" v-on:click="onUnshift" />
             <input type="button" value="pop末尾削除" v-on:click="onPop" />
             <input type="button" value="shift先頭削除" v-on:click="onShift" />
+            <input type="button" value="sort並替" v-on:click="onSort" />
+            <input type="button" value="reverse反転" v-on:click="onReverse" />
         </form>
         <ul>
             <li v-for="item in list"> {{ item }}
