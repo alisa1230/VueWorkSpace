@@ -12,10 +12,16 @@
     <div id="app">
         <h3>「ABCD」って文字が追加される</h3>
         <form>
+            <input type="button" value="push末尾追加" v-on:click="onPush" />
+            <input type="button" value="unshift先頭追加" v-on:click="onUnshift" />
+            <input type="button" value="pop末尾削除" v-on:click="onPop" />
             <input type="button" value="shift先頭削除" v-on:click="onShift" />
+            <input type="button" value="sort並替" v-on:click="onSort" />
+            <input type="button" value="reverse反転" v-on:click="onReverse" />
+            <input type="button" value="splice2番目から1個の要素をABCDで置換" v-on:click="onSplice" />
         </form>
         <ul>
-            <li v-for="item in list" v-bind:key="item"> {{ item }}
+            <li v-for="item in list"> {{ item }}
 
             </li>
         </ul>
