@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <form>
+            <label for="memo">メモ</label>
+            <!-- <input type="text" id="memo" v-bind="attrs"> -->
+            <input type="text" id="memo" size="20" maxlength="14" required="required"><br>
+            最大値<input type="text" maxlength="15" :trim="countNum">{{
+            countNum}}
+        </form>
+    </div>
+    <script src="bind_obj.js"></script>
+</body>
+
+</html>

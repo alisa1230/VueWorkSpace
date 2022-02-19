@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <p>現在値：{{ current }}</p>
+        <!-- 増分値の異なるボタンを配置 -->
+        <my-counter step="1" v-on:plus="onplus"></my-counter>
+        <my-counter step="5" v-on:plus="onplus"></my-counter>
+        <my-counter step="10" v-on:plus="onplus"></my-counter>
+    </div>
+    <script src="emit_basic.js"></script>
+</body>
+
+</html>
